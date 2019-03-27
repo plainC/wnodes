@@ -1,0 +1,9 @@
+#include all "wnodes.h"
+
+guard WNODES
+
+abstract class WNode
+
+class WNet : WNode
+  read int foo
+

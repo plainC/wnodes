@@ -1,0 +1,6 @@
+[submodule "wondermacros"]
+	path = wondermacros
+	url = https://github.com/plainC/wondermacros.git
+[submodule "genann"]
+	path = genann
+	url = https://github.com/codeplea/genann.git
