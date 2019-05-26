@@ -2,8 +2,26 @@
 
 guard WNODES
 
+class WType
+
+
+class WTypeArray : WType
+  read struct WType* elem_type
+  read int nbr_dimensions
+  read int* dims
+
+
+class WChannel
+  read char* name
+  read struct WType* type
+
+
 abstract class WNode
+  signal on_data(int x)
+
+
+class WInput : WNode
+  read char* prompt
 
 class WNet : WNode
   read int foo
-
